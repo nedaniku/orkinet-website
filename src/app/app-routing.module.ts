@@ -4,7 +4,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { IndexComponent } from './components/index/index.component';
 
 const routes: Routes = [
-  { path: '/', component: IndexComponent },
+  { path: '', component: IndexComponent },
   { path: '404', component: PageNotFoundComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
