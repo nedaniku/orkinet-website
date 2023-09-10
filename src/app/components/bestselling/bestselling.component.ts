@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-bestselling',
+  selector: 'bestselling',
   templateUrl: './bestselling.component.html',
   styleUrls: ['./bestselling.component.scss']
 })
