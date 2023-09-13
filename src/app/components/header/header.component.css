@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 76.8rem) {
+  .container {
+    width: 70rem;
+  }
+}
+@media screen and (min-width: 102.4rem) {
+  .container {
+    width: 100rem;
+  }
+}
+@media screen and (min-width: 128rem) {
+  .container {
+    width: 120rem;
+  }
+}
+@media screen and (min-width: 144rem) {
+  .container {
+    width: 140rem;
+  }
+}
+
+.header {
+  min-height: 10rem;
+}
+.header__background {
+  position: absolute;
+  top: -15.55rem;
+  left: -6.25rem;
+  z-index: -1;
+}/*# sourceMappingURL=header.component.css.map */
