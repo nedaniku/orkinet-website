@@ -1,3 +1,8 @@
+.header_heading .searchBox, .header_heading .logoDesktop .menu__item .btn, .header_heading, .header__tools_items, .header__call_icon, .header__call, .header__content {
+  display: flex;
+  align-items: center;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -31,4 +36,93 @@
   top: -15.55rem;
   left: -6.25rem;
   z-index: -1;
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+}
+.header__content {
+  justify-content: space-between;
+}
+.header__leftSide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+.header__call {
+  text-decoration: none;
+  gap: 1rem;
+}
+.header__call_label {
+  color: #5e6282;
+  font-size: 1rem;
+}
+.header__call_icon {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  width: 1.56rem;
+  height: 1.5rem;
+  justify-content: center;
+}
+.header__tools_items {
+  gap: 1.5rem;
+  list-style: none;
+}
+.header__rightSide {
+  display: flex;
+  flex-direction: column;
+}
+.header_heading {
+  gap: 1.8rem;
+}
+.header_heading .logoDesktop {
+  display: flex;
+}
+.header_heading .logoDesktopimg {
+  max-height: 2.9rem;
+}
+.header_heading .logoDesktop .menu__items {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding-right: 1rem;
+}
+.header_heading .logoDesktop .menu__item_link {
+  color: #5e6282;
+  text-decoration: none;
+}
+.header_heading .logoDesktop .menu__item .btn {
+  justify-content: center;
+  gap: 1rem;
+  height: 48px;
+  min-width: 48px;
+  padding: 0 2rem;
+  text-decoration: none;
+}
+.header_heading .logoDesktop .menu__item--curved-2 {
+  border-radius: 16px;
+}
+.header_heading .logoDesktop .menu__item--light {
+  background-color: #fff;
+  color: #5e6282;
+}
+.header_heading .logoDesktop .menu__item span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.header_heading .searchBox {
+  height: 50px;
+  background-color: white;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-radius: 0.63rem;
+  padding: 0.6875rem 1rem 0.75rem 16.375rem;
+  min-width: 27.8rem;
+  border: 1px solid #D2D5DE;
+}
+.header_heading__icon {
+  max-height: 1.5rem;
 }/*# sourceMappingURL=header.component.css.map */
