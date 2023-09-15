@@ -56,9 +56,12 @@ $border-color: #bbbdcc;
 
 .header__background {
     position: absolute;
-    top: -150px;
-    left: -120px;
+    top: -14px;
+    left: -31px;
+    width: 732px;
     z-index: -1;
+    // top: -150px;
+    // left: -120px;
 }
 
 @media screen and (min-width: 1024px) {
