@@ -1,2 +1,23 @@
 @import url(assets/scss/app-styles.scss);
 @import url(assets/scss/iran-sans-font.scss);
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    /* 62.5% -> 62.5 * 16px = 10px */
+    /* for relative font-size with browser setting */
+    direction: rtl;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'IRANSans', Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1;
+    text-align: right;
+    direction: rtl;
+}
