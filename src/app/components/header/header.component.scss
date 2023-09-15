@@ -1,20 +1,3 @@
-$color-primary: #5e6282;
-$color-secondary: #ee1c25;
-$color-dark: #646466;
-$color-white: #fff;
-$color-body: #e7e7e8;
-$color-heading: #000000;
-$color-border: #e7e7e8;
-$color-text-black: #000;
-$color-text-green: #0e7c0e;
-$color-text-gray: #646466;
-$color-text-gold: #d2ac67;
-$color-text-red: #d2ac67;
-$color-text-navyBlue: #004a85;
-$border-radius1: 16px;
-$border-radius2: 30px;
-$border-color: #bbbdcc;
-
 %flex-box {
     display: flex;
     align-items: center;
@@ -23,7 +6,9 @@ $border-color: #bbbdcc;
 .container {
     width: 100%;
     margin: 0 auto;
+}
 
+.header {
     @media screen and (min-width: 76.8rem) {
         width: 70rem;
 
@@ -80,13 +65,13 @@ $border-color: #bbbdcc;
         gap: 1rem;
 
         &_label {
-            color: $color-primary;
+            color: var(--color-primary);
             font-size: 1rem;
         }
 
         &_icon {
             @extend %flex-box;
-            background-color: $color-white;
+            background-color: var(--color-white);
             border-radius: 1.5rem;
             width: 1.56rem;
             height: 1.5rem;
@@ -130,7 +115,7 @@ $border-color: #bbbdcc;
 
                 &__item {
                     &_link {
-                        color: $color-primary;
+                        color: var(--color-primary);
                         text-decoration: none;
                     }
 
@@ -145,12 +130,12 @@ $border-color: #bbbdcc;
                     }
 
                     &--curved-2 {
-                        border-radius: $border-radius1;
+                        border-radius: var(--border-radius1);
                     }
 
                     &--light {
-                        background-color: $color-white;
-                        color: $color-primary;
+                        background-color: var(--color-white);
+                        color: var(--color-primary);
                     }
 
                     & span {
@@ -170,7 +155,7 @@ $border-color: #bbbdcc;
             border-radius: 0.63rem;
             padding: 0.6875rem 1rem 0.75rem 16.375rem;
             min-width: 27.8rem;
-            border: 1px solid $border-color;
+            border: 1px solid var(--border-color);
         }
 
         &__icon {
