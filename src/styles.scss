@@ -1,5 +1,6 @@
-@import url(assets/scss/app-styles.scss);
-@import url(assets/scss/iran-sans-font.scss);
+@import './src/assets/scss/variables.scss';
+@import './assets/scss/app-styles.scss';
+@import './assets/scss/iran-sans-font.scss';
 
 *,
 *::after,

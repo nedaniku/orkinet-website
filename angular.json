@@ -31,7 +31,6 @@
             ],
             "styles": [
               "src/assets/scss/normalize.scss",
-              "src/assets/scss/variables.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -95,6 +94,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/scss/normalize.scss",
               "src/styles.scss"
             ],
             "scripts": []
