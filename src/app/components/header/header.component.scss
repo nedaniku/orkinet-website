@@ -35,6 +35,7 @@
         padding-top: 3.75rem;
         padding-bottom: 10px;
     }
+   
 
     &__background {
         position: absolute;
@@ -100,6 +101,20 @@
             align-items: center;
             gap: 2rem;
         }
+        &_bg{
+            position: absolute;
+            right: -5rem;
+            top: -2.5rem;
+            z-index: -1;
+            width: 37.42531rem;
+            height: 38.82563rem;
+            flex-shrink: 0;
+            border-radius: 38.82563rem;
+            opacity: 0.3;
+            background: var(--d2, #D5AEE4);
+            filter: blur(94px);
+        }
+    
     }
 
     /********* SearchBox styles *******************************************/

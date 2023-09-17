@@ -1,0 +1,87 @@
+@import '../../../assets/scss/variables.scss';
+
+%box_style{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        gap: 2.5rem;
+        text-decoration:none; 
+}
+
+::selection {
+    background: $color-secondary;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        width: 700px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 1000px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1200px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 1400px;
+    }
+}
+
+/********* category styles *******************************************/
+.category__items{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 11rem;
+}
+.category__item{
+
+    &_1{
+        @extend %box_style
+    
+    }
+    &_2{
+        @extend %box_style 
+    }
+    &_3{
+        @extend %box_style
+    }
+    &_4{
+        @extend %box_style
+    }
+    &_5{
+        @extend %box_style
+    }
+    &_6{
+        @extend %box_style
+    }
+}
+a:hover{
+border-radius: 2.25rem;
+background: $color-white;
+width: 14.375rem;
+height: 19.375rem;
+flex-shrink: 0;
+box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px -5px 28px 0px rgba(0, 0, 0, 0.04), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02);
+}
+
+.category__bg_image{
+   position: absolute;
+   top: 105rem; 
+   left: 90rem;
+   z-index: -1;
+   width: 6.25rem;
+height: 6.25rem;
+flex-shrink: 0;
+}
+
