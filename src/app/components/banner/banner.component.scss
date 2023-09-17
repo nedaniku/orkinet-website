@@ -27,32 +27,35 @@
 }
 
 /********* benner styles *******************************************/
-.banner{
+.banner {
+    margin: 2.5rem 0;
 
-    &__content{
+    &__content {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 10rem;
     }
-    &__leftSide_image{
-        width: 70rem;
-         height: 70rem;
+
+    &__leftSide_image {
+        width: 45rem;
         transform: rotate(1deg);
         flex-shrink: 0;
     }
-    &__rightSide{
+
+    &__rightSide {
         display: inline-flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
-        width: 50rem;  
-        height: 25rem; 
+        width: 50rem;
+        height: 25rem;
 
     }
-    &__topText{
+
+    &__topText {
         color: $color-text-bannerBlue;
         font-size: 3rem;
         font-style: normal;
@@ -60,23 +63,27 @@
         line-height: normal;
         letter-spacing: 0.01875rem;
     }
-    &__downText{
+
+    &__downText {
         color: $color-text-bannerBlue ;
         text-align: center;
         font-size: 1.85rem;
         font-style: normal;
         font-weight: 450;
-        line-height: 222.022%; /* 2.50025rem */
+        line-height: 222.022%;
+        /* 2.50025rem */
         letter-spacing: 0.01875rem;
     }
-    &__vector_img{
+
+    &__vector_img {
         width: 23.59063rem;
         height: 4.13644rem;
         transform: rotate(-152.809deg);
         flex-shrink: 0;
     }
-    &__button{
-       
+
+    &__button {
+
         padding: 0.5rem 1.875rem 0.5625rem 1.875rem;
         border-radius: 0.625rem;
         border-color: $color-white;
@@ -89,6 +96,3 @@
 
     }
 }
-
-
-
