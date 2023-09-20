@@ -11,6 +11,7 @@ import { MainCategoryComponent } from './components/main-category/main-category.
 import { BestsellingComponent } from './components/bestselling/bestselling.component';
 import { IndexComponent } from './components/index/index.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     MainCategoryComponent,
     BestsellingComponent,
     IndexComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
