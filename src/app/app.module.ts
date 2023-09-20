@@ -12,6 +12,7 @@ import { BestsellingComponent } from './components/bestselling/bestselling.compo
 import { IndexComponent } from './components/index/index.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CartComponent } from './components/cart/cart.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CartComponent } from './components/cart/cart.component';
     BestsellingComponent,
     IndexComponent,
     PageNotFoundComponent,
-    CartComponent
+    CartComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
