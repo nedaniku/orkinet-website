@@ -37,9 +37,24 @@
                 <span class="header__call_label"> 91309019 - 021 | تماس 8 الی 21 </span>
             </a>
             <div class="header__tools">
-                <ul class="header__tools_items">
-                    <li class="header_tools_item">
-                        <a class="btn btn--curved-2 btn--light" href="">
+                <div class="mobileHeading">
+                    <a class="mobileHeading__toggle" href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="22" viewBox="0 0 27 22">
+                            <g id="toggleIcon" transform="translate(-374.357 -26)">
+                                <rect id="Rectangle_7" data-name="Rectangle 7" width="23" height="4" rx="2"
+                                    transform="translate(378.357 26)" fill="#5e6282" />
+                                <rect id="Rectangle_8" data-name="Rectangle 8" width="23" height="4" rx="2"
+                                    transform="translate(374.357 35)" fill="#5e6282" />
+                                <rect id="Rectangle_9" data-name="Rectangle 9" width="23" height="4" rx="2"
+                                    transform="translate(378.357 44)" fill="#5e6282" />
+                            </g>
+                        </svg>
+                    </a>
+                    <img class="mobileHeading__logo" src="../../../assets/images/header-images/logo.svg" alt="">
+                </div>
+                <ul class="header__tools__items">
+                    <li class="header__tools__item">
+                        <a class="btn btn--withoutText btn--curved-2 btn--light" href="">
                             <svg id="location" xmlns="http://www.w3.org/2000/svg" width="19.306" height="21.603"
                                 viewBox="0 0 19.306 21.603">
                                 <path id="Path_5" data-name="Path 5"
@@ -50,11 +65,11 @@
                                     transform="translate(-66.7 -622.384)" fill="#bbbdcc" />
                             </svg>
 
-                            <span>انتخاب محدوده</span>
+                            <span class="btn__text">انتخاب محدوده</span>
                         </a>
                     </li>
-                    <li class="header_tools_item">
-                        <a class="btn btn--curved-2 btn--light" href="">
+                    <li class="header__tools__item">
+                        <a class="btn btn--withoutText btn--curved-2 btn--light" href="">
                             <svg id="login" xmlns="http://www.w3.org/2000/svg" width="21.605" height="21.528"
                                 viewBox="0 0 21.605 21.528">
                                 <path id="login-2" data-name="login"
@@ -65,31 +80,32 @@
                                     transform="translate(-106.77 -62.5)" fill="#bbbdcc" />
                             </svg>
 
-                            <span>ورود | ثبت نام</span>
+                            <span class="btn__text">ورود | ثبت نام</span>
                         </a>
                     </li>
-                    <li class="header_tools_item">
-                        <a class="btn btn--curved-2 btn--light" href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="33.323" height="35.367"
-                                viewBox="0 0 33.323 35.367">
-                                <g id="cart" transform="translate(0)">
+                    <li class="header__tools__item">
+                        <a class="cart btn btn--withoutText btn--curved-2 btn--light" href="">
+                            <svg class="cart__icon" xmlns="http://www.w3.org/2000/svg" width="24.629" height="20.548"
+                                viewBox="0 0 24.629 20.548">
+                                <g id="cart" transform="translate(0 -14.818)">
                                     <path id="cart-2" data-name="cart"
                                         d="M85.772,139.4l-17.774,0-.746-2.564a1.159,1.159,0,0,0-.8-.788l-2.609-.7a1.211,1.211,0,0,0-.3-.039,1.15,1.15,0,0,0-.3,2.26l1.984.537,4.027,14.529a1.7,1.7,0,1,0,2.454,1.522.478.478,0,0,0,0-.065h8.2c0,.023,0,.045,0,.065a1.7,1.7,0,1,0,1.908-1.686c-2.037-.329-10.356-.732-10.356-.732l-.273-1.069H81.557A1.2,1.2,0,0,0,82.7,149.8l2.246-7.908h.825a1.245,1.245,0,1,0,0-2.49Zm-13.218,8.614H70.61c-.053,0-.132.011-.166-.113-.045-.158-.11-.377-.11-.377l-1.525-5.372a.082.082,0,0,1,.014-.076.085.085,0,0,1,.07-.034h2.364a.085.085,0,0,1,.084.068l1.289,5.775.006.017a.078.078,0,0,1,0,.025A.084.084,0,0,1,72.554,148.011Zm4.964-5.867-1.05,5.8a.087.087,0,0,1-.084.068H74.918a.085.085,0,0,1-.084-.068l-1.05-5.8a.085.085,0,0,1,.017-.073.093.093,0,0,1,.068-.034h3.568a.08.08,0,0,1,.068.034A.086.086,0,0,1,77.518,142.144Zm4.972.006-1.646,5.8a.09.09,0,0,1-.084.065H78.748a.084.084,0,0,1-.068-.034.085.085,0,0,1-.017-.073l1.294-5.8a.087.087,0,0,1,.084-.068h2.364a.094.094,0,0,1,.07.034A.1.1,0,0,1,82.491,142.149Z"
                                         transform="translate(-62.393 -120.482)" fill="#5e6282" />
-                                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="10" cy="10" r="10"
-                                        transform="translate(13.323 3)" fill="#bbbdcc" />
-                                    <text id="_0" data-name="0" transform="translate(19.323 17)" fill="#5e6282"
-                                        font-size="16" font-family="IRANSansWebFaNum, 'IRANSansWeb\(FaNum\)'">
-                                        <tspan x="0" y="0">0</tspan>
-                                    </text>
                                 </g>
                             </svg>
+                            <div class="cart__count">
+                                <span>15</span>
+                            </div>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <img class="header__background" src="../../../assets/images/header-images/decore.svg" alt="">
-    <img class="header__rightSide_bg" src="../../../assets/images/header-images/Ellipse 8.jpg" alt="">
+    <img class="header__background header__background_desktop"
+        src="../../../assets/images/header-images/decore-desktop.svg" alt="">
+    <img class="header__background header__background_mobile"
+        src="../../../assets/images/header-images/decore-mobile.svg" alt="">
+
+    <!-- <img class="header__rightSideBackground" src="../../../assets/images/header-images/Ellipse.svg" alt=""> -->
 </div>
