@@ -26,6 +26,36 @@ body {
   direction: rtl;
 }
 
+.container {
+  width: 100%;
+  padding: 1.6rem;
+  margin: auto;
+
+  @media #{$mq-small} {
+    width: 700px;
+  }
+
+  @media #{$mq-medium} {
+    width: 1000px;
+  }
+
+  @media #{$mq-large} {
+    width: 1200px;
+  }
+
+  @media #{$mq-xlarge} {
+    width: 1400px;
+  }
+
+  @media #{$mq-2xlarge} {
+    width: 1600px;
+  }
+
+  // @media #{$mq-3xlarge} {
+  //   width: 1600px;
+  // }
+}
+
 input {
   font-family: 'IRANSans', Arial, Helvetica, sans-serif;
 }

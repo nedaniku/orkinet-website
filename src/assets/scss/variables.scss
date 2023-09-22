@@ -11,10 +11,29 @@
    $color-text-gold: #d2ac67;
    $color-text-red: #d2ac67;
    $color-text-navyBlue: #004a85;
-   $color-text-bannerBlue:#171E4C;
+   $color-text-bannerBlue: #171E4C;
    $border-radius1: 16px;
    $border-radius2: 30px;
    $border-color: #bbbdcc;
-   $color-button-banner:#AD5A86;
+   $color-button-banner: #AD5A86;
    $color-card-sub: rgba(23, 30, 76, 0.80);
-   $color-bg-bestSelling:#FAFAFF
+   $color-bg-bestSelling: #FAFAFF;
+
+
+   $bp-xsmall: 30em; // 480px
+   $bp-small: 48em; // 768px
+   $bp-medium: 64em; // 1024px
+   $bp-large: 80em; // 1280px
+   $bp-xlarge: 90em; // 1440px
+   $bp-2xlarge: 120em; // 1920px
+   $bp-3xlarge: 160em; // 2560px
+
+   // Media Queries
+   $mq-xsmall: "(min-width: #{$bp-xsmall})";
+   $mq-small: "(min-width: #{$bp-small})";
+   $mq-medium: "(min-width: #{$bp-medium})";
+   $mq-large: "(min-width: #{$bp-large})";
+   $mq-xlarge: "(min-width: #{$bp-xlarge})";
+   $mq-2xlarge: "(min-width: #{$bp-2xlarge})";
+   $mq-3xlarge: "(min-width: #{$bp-3xlarge})";
+   $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
