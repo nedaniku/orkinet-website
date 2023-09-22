@@ -83,31 +83,32 @@
       width: 38vw;
     }
   }
-&__rightSide {
-        display: flex;
-        flex-direction: column;
 
-        &_heading {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
+  &__rightSide {
+    display: flex;
+    flex-direction: column;
 
-        &_bg {
-            position: absolute;
-            right: -5rem;
-            top: -2.5rem;
-            z-index: -1;
-            width: 37.42531rem;
-            height: 38.82563rem;
-            flex-shrink: 0;
-            border-radius: 38.82563rem;
-            opacity: 0.3;
-            background: var(--d2, #D5AEE4);
-            filter: blur(94px);
-        }
-
+    &_heading {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
     }
+
+    &_bg {
+      position: absolute;
+      right: -5rem;
+      top: -2.5rem;
+      z-index: -1;
+      width: 37.42531rem;
+      height: 38.82563rem;
+      flex-shrink: 0;
+      border-radius: 38.82563rem;
+      opacity: 0.3;
+      background: var(--d2, #D5AEE4);
+      filter: blur(94px);
+    }
+
+  }
 
   &__content {
     display: flex;
@@ -251,69 +252,69 @@
     right: 12px;
     top: 75px;
     display: none;
-  }
 
-  .menu::after {
-    content: '';
-    position: absolute;
-    right: 12px;
-    top: -10px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 10px solid rgb(255, 255, 255);
-  }
-
-  .menu__items {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding-right: 0;
-    padding: 0 2rem;
-    margin: 0.5rem 0;
-  }
-
-  .menu__item {
-    border-bottom: 1px solid #ececec;
-  }
-
-  .menu__item:last-child {
-    border-bottom: none;
-  }
-
-  .menu__item_link {
-    padding: 1.2rem 2rem;
-    color: $color-primary;
-    text-decoration: none;
-    display: flex;
-  }
-
-  @media screen and (min-width: 1024px) {
-    .menu {
+    @media screen and (min-width: 1024px) {
       all: unset;
+
+      &::after {
+        display: none;
+      }
     }
 
-    .menu::after {
-      display: none;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 12px;
+      top: -10px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 10px solid rgb(255, 255, 255);
     }
 
-    .menu__items {
-      flex-direction: row;
-      gap: 0rem;
-      padding-right: 10px;
-      margin: 0;
+    &__items {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding-right: 0;
+      padding: 0 2rem;
+      margin: 0.5rem 0;
+
+      @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        gap: 0rem;
+        padding-right: 10px;
+        margin: 0;
+      }
     }
 
-    .menu__item {
-      padding: 0;
+    &__item {
+      border-bottom: 1px solid #ececec;
+
+      @media screen and (min-width: 1024px) {
+        padding: 0;
+        border-bottom: none;
+      }
+
+      &_link {
+        padding: 1.2rem 2rem;
+        color: $color-primary;
+        text-decoration: none;
+        display: flex;
+
+        @media screen and (min-width: 1024px) {
+          padding: 1.2rem 1.2rem;
+        }
+      }
+    }
+
+    &__item:last-child {
       border-bottom: none;
     }
-
-    .menu__item_link {
-      padding: 1.2rem 1.2rem;
-    }
   }
+
+
 
   /********* Buttons styles *******************************************/
   .btn {
@@ -347,84 +348,82 @@
   .btn span {
     font-size: 1.5rem;
     font-weight: 500;
-  }
 
-  @media screen and (min-width: 1024px) {
-    .btn {
+    @media screen and (min-width: 1024px) {
       min-width: 48px;
       height: 48px;
-    }
 
-    .btn--withoutText {
-      padding: 0 2rem;
-    }
+      .btn--withoutText {
+        padding: 0 2rem;
+      }
 
-    .btn--withoutText .btn__text {
-      display: block;
-    }
+      .btn--withoutText .btn__text {
+        display: block;
+      }
 
-    .btn--withoutText.btn--curved-2 {
-      border-radius: $border-radius1;
+      .btn--withoutText.btn--curved-2 {
+        border-radius: $border-radius1;
+      }
     }
   }
 
-  /********* Cart styles *******************************************/
+
+  /********* Cart styles ***************************/
   .cart {
     position: relative;
     padding: 0;
-  }
 
-  .cart__icon {}
+    &__icon {}
 
-  .cart__count {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    border-radius: 10px;
-    background-color: $color-secondary;
-    height: 18px;
-    min-width: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .cart__count span {
-    font-size: 12px;
-    color: $color-primary;
-  }
-
-  @media screen and (min-width: 1024px) {
-    .cart__count {
+    &__count {
       position: absolute;
       right: 5px;
       top: 5px;
       border-radius: 10px;
       background-color: $color-secondary;
-      height: 20px;
-      min-width: 20px;
+      height: 18px;
+      min-width: 18px;
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media screen and (min-width: 1024px) {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        border-radius: 10px;
+        background-color: $color-secondary;
+        height: 20px;
+        min-width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
+
+    &__count span {
+      font-size: 12px;
+      color: $color-primary;
+    }
+
+
   }
 
-  /********* Mobile styles *******************************************/
+  /********* Mobile styles *********************************/
   .mobileHeading {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-  }
 
-  .mobileHeading__logo {
-    height: 50px;
-  }
-
-  .mobileHeading__toggle {}
-
-  @media screen and (min-width: 1024px) {
-    .mobileHeading {
+    @media screen and (min-width: 1024px) {
       display: none;
     }
+
+    &__logo {
+      height: 50px;
+    }
+
+    &__toggle {}
+
   }
 }
