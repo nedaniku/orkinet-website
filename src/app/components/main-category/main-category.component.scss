@@ -40,7 +40,7 @@
     {
        display: grid;
        grid-template-columns: 1fr 1fr 1fr;
-       gap: 2rem;
+       gap: 1rem;
  
    }
    @media screen and (max-width:768px) {
@@ -48,10 +48,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap:3rem ;
    }
-   @media screen and (max-width:1280px) {
+   @media screen and (max-width:1024px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:7rem ;
+    gap: 2rem;
    }
 }
 
@@ -78,7 +78,11 @@
     min-height:10rem ;
     .category__text{
         padding-bottom: 1rem;
-    }  
+    } 
+    @media screen and (max-width:1024px) {
+
+    }
+
 }
 
    
@@ -123,7 +127,7 @@ a:hover {
     width: 5.25rem;
     height: 5.25rem;
    
-    @media screen and (max-width:1280px) {
+    @media screen and (max-width:1024px) {
         display: none;
     }
 
@@ -137,13 +141,19 @@ a:hover {
     z-index: -1;
     width: 5.25rem;
     height: 5.25rem;
+    @media screen and (max-width:480px) {
+        margin-right: -7rem;
+    }
+    @media screen and (max-width:768px) {
+ margin-right: -7rem;
+    }
    
-      @media screen and (max-width:1280px){
+      @media screen and (max-width:1024px){
     margin-right: -12rem;
     margin-top: -3rem;
    
       }
-      @media screen and (min-width:1280px) {
+      @media screen and (min-width:1024px) {
         display: none;
       }
 
