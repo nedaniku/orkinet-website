@@ -13,6 +13,7 @@ import { IndexComponent } from './components/index/index.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CardComponent } from './components/card/card.component';
+import { PlantCategoryComponent } from './components/plant-category/plant-category.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CardComponent } from './components/card/card.component';
     IndexComponent,
     PageNotFoundComponent,
     CartComponent,
-    CardComponent
+    CardComponent,
+    PlantCategoryComponent
   ],
   imports: [
     BrowserModule,

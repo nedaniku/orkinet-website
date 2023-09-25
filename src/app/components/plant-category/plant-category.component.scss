@@ -1,0 +1,41 @@
+@import '../../../assets/scss/variables.scss';
+
+::selection {
+    background: $color-secondary;
+    color: #fff;
+}
+
+.plantCategory {
+    margin-top: 8rem;
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        justify-items: stretch;
+        align-items: center;
+        gap: 1.6rem;
+
+        @media #{$mq-medium} {
+            gap: 2.4rem;
+        }
+
+        @media #{$mq-xlarge} {
+            gap: 3.2rem;
+        }
+
+        @media #{$mq-2xlarge} {
+            gap: 4.8rem;
+        }
+
+    }
+
+    &__img {
+
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+
+    }
+
+}
