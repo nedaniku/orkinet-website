@@ -1,0 +1,17 @@
+@import '../../../assets/scss/variables.scss';
+
+::selection {
+    background: $color-secondary;
+    color: #fff;
+}
+
+.cart__items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+
+}
+
+   
+
