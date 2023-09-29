@@ -14,6 +14,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { CartComponent } from './components/cart/cart.component';
 import { CardComponent } from './components/card/card.component';
 import { PlantCategoryComponent } from './components/plant-category/plant-category.component';
+import { DiscountFlowerComponent } from './components/discount-flower/discount-flower.component';
+import { DiscountPlantComponent } from './components/discount-plant/discount-plant.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { PlantCategoryComponent } from './components/plant-category/plant-catego
     PageNotFoundComponent,
     CartComponent,
     CardComponent,
-    PlantCategoryComponent
+    PlantCategoryComponent,
+    DiscountFlowerComponent,
+    DiscountPlantComponent
   ],
   imports: [
     BrowserModule,
