@@ -1,0 +1,41 @@
+@import "../../../assets/scss/variables.scss";
+
+::selection {
+    color: #fff;
+}
+
+.cart {
+    background: $color-bg2;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__upContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   &__downContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 11rem;
+    margin-bottom: 7rem;
+    gap: 7rem;
+   }
+   .downContent_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+   }
+  .item_text{
+    color: $color-service-text;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
