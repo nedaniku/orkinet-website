@@ -4,75 +4,88 @@
     color: #fff;
 }
 
-.footer{
+.footer {
     background: $color-footer;
-        &__items{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: start;
-            gap: 5.6rem;
 
-        }
-        &__item{
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-        .logo{
-            width: 6.875rem;
-            height: 2.4375rem;
-        }
-        .address{
-           display: flex;
-           flex-direction: row;
-           justify-content:center;
-           align-items:center;
-           gap: 0.5rem;
-           &_icon{
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: start;
+        gap: 5.6rem;
+
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .logo {
+        width: 6.875rem;
+        height: 2.4375rem;
+    }
+
+    .address {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        &_icon {
             width: 1.5rem;
             height: 1.5rem;
-           }
-           &_text{
-            color:$footer-text;
-            font-size: 1rem;
-            font-weight: 400;
-           }
-        } 
-        .item_title{
-            color: $footer-text;
-            font-size: 1.25rem;
-            font-weight: 500;
-        }  
-        .item_text{
-            color: $footer-text;
-            font-size: 1rem;
-            font-weight: 400;
-        }
-        .footer_line{
-            width: 2.5rem;
-            stroke-width: 2px;
-            stroke: $footer-text;
-        }
-        &__enamad{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .enamd{
-            width: 7.5rem;
-            height: 7.5rem;
-        }
-        .star{
-            width: 1.2rem;
-            height: 1.2rem;
-        }
-        .enamad_text{
-            color: $color-text-black;
-            font-size: 0.875rem;
-            font-weight: 500;
         }
 
-    
+        &_text {
+            color: $footer-text;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
+    .item_title {
+        color: $footer-text;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .item_text {
+        color: $footer-text;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .footer_line {
+        width: 2.5rem;
+        stroke-width: 2px;
+        stroke: $footer-text;
+    }
+
+    &__enamad {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .enamd {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .star {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .enamad_text {
+        color: $color-text-black;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+
+
 }
