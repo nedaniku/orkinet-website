@@ -16,6 +16,7 @@ import { CardComponent } from './components/card/card.component';
 import { PlantCategoryComponent } from './components/plant-category/plant-category.component';
 import { DiscountFlowerComponent } from './components/discount-flower/discount-flower.component';
 import { DiscountPlantComponent } from './components/discount-plant/discount-plant.component';
+import { SloganComponent } from './components/slogan/slogan.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { DiscountPlantComponent } from './components/discount-plant/discount-pla
     CardComponent,
     PlantCategoryComponent,
     DiscountFlowerComponent,
-    DiscountPlantComponent
+    DiscountPlantComponent,
+    SloganComponent
   ],
   imports: [
     BrowserModule,
